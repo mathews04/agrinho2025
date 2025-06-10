@@ -1,0 +1,78 @@
+/* 1. Variáveis CSS (root) */
+:root {
+  --cor-primaria: #e53935;
+  --cor-fundo: #fff5f5;
+  --cor-texto: #333;
+}
+
+/* 2. Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Cabeçalho */
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 4. Seletores por ID e Classe */
+#titulo-principal {
+  font-size: 2em;
+}
+
+.introducao {
+  text-align: center;
+  padding: 20px;
+}
+
+.imagem-tomate {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 5. Seção de interação */
+.interacao {
+  background-color: #ffeaea;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* 6. Pseudo-classes */
+button:hover {
+  background-color: #b71c1c;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* 7. Responsividade */
+@media (max-width: 600px) {
+  .imagem-tomate {
+    width: 90%;
+  }
+
+  .interacao {
+    margin: 10px;
+    padding: 10px;
+  }
+}
